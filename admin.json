@@ -1,0 +1,34 @@
+{
+    "title": "User",
+    "icon": "User",
+    "path": "/app/user",
+    "sort": 0,
+    "children": [
+        {
+            "title": "User List",
+            "icon": "User",
+            "path": "/app/user/admin/User/index",
+            "component": "table",
+            "children": [
+                {
+                    "title": "Create User",
+                    "path": "/app/user/admin/User/create",
+                    "show": false,
+                    "component": "form"
+                },
+                {
+                    "title": "Edit User",
+                    "show": false,
+                    "path": "/app/user/admin/User/update",
+                    "component": "form"
+                },
+                {
+                    "title": "Update Status",
+                    "show": false,
+                    "path": "/app/user/admin/User/indexUpdateState",
+                    "component": ""
+                }
+            ]
+        }
+    ]
+}

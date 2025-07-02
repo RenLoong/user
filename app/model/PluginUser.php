@@ -17,14 +17,6 @@ class PluginUser extends Basic
     {
         return Uploads::path($value);
     }
-    public function getNicknameAttr($value)
-    {
-        return $value?base64_decode($value):$value;
-    }
-    public function setNicknameAttr($value)
-    {
-        return $value?base64_encode($value):$value;
-    }
     public function setPasswordAttr($value)
     {
         return $value?Password::encrypt($value):$value;

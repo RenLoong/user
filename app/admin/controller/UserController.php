@@ -28,7 +28,7 @@ class UserController extends Basic
         ]);
         $builder->addTableAction('编辑', [
             'model' => Action::DIALOG['value'],
-            'path' => 'User/update',
+            'path' => '/app/user/admin/User/update',
             'props' => [
                 'title' => '编辑《ID：{id}》用户'
             ],
@@ -43,7 +43,7 @@ class UserController extends Basic
         $builder->addHeader();
         $builder->addHeaderAction('创建用户', [
             'model' => Action::DIALOG['value'],
-            'path' => 'User/create',
+            'path' => '/app/user/admin/User/create',
             'props' => [
                 'title' => '创建用户'
             ],
@@ -174,7 +174,7 @@ class UserController extends Basic
         $builder->add('state', '状态', [
             'component' => [
                 'name' => 'switch',
-                'api' => 'User/indexUpdateState',
+                'api' => '/app/user/admin/User/indexUpdateState',
                 'props' => [
                     'active-value' => State::YES['value'],
                     'inactive-value' => State::NO['value']

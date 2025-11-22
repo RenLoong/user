@@ -1,6 +1,6 @@
 <?php
 
-namespace plugin\apistore\api\admin;
+namespace plugin\user\api\admin;
 
 use app\expose\build\builder\DataboardBuilder;
 use app\expose\build\builder\databoardBuilder\component\Statistic;
